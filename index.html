@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>janken</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>じゃんけん</h1>
+    <h2>rock - paper - scissors</h2>
+
+    <div class="choices">
+        <button onclick="playGame('rock')">
+            <span>👊</span><br>
+            グー
+          </button>
+        <button onclick = "playGame('paper')">
+            <span>🫱</span><br>
+            パー</button>
+        <button onclick = "playGame('scissors')">
+            <span>✌️</span><br>
+            チョキ</button>
+    </div>
+
+    <div id="playerDisplay">プレーヤー | player: </div>
+    <div id="computerDisplay">コンピューター | computer: </div>
+    <div id="resultDisplay"></div>
+
+    <div class="scoreDisplay">player score:
+        <span id="playerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay">computer score:
+        <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
